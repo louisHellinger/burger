@@ -12,9 +12,11 @@ var burger = {
   insertOne: function(name) {
   	console.log("this is the burgerName " + name);
 
+  	if (name != ""){
+
     orm.insertOne('burgers', 'burger_name', 'devoured', name, false, function(res) {
       console.log(res);
-    });
+    });}
   },
   updateOne: function(bool, burgerId, cb) {
     orm.updateOne("burgers", "devoured", bool, burgerId, function(res) {
