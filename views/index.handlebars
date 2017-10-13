@@ -1,0 +1,46 @@
+<div class="container-fluid">
+	
+	<div id="row">
+		<div class="jumbotron">
+			<div id="header-container">
+				<h1><img src="/assets/img/burger.png" alt="">
+				Build Your Own Burger Shoppe</h1>
+				</h1>
+			</div>
+		</div>
+		<div id="left-panel" class="d-flex flex-column col-lg-offset-1 col-lg-5  col-md-offset-1 col-md-5">
+			<h2 class="section-header">BURGERS TO EAT</h2>
+			{{#each burgers}}
+			{{#unless devoured}}
+			{{> burgers/burger-partial devoured=true}}
+			{{/unless}}
+			{{/each}}
+		</div>
+		<div id="right-panel" class="d-flex flex-column col-lg-5 col-md-5">
+			<h2 class="section-header">ALREADY EATEN</h2>
+			{{#each burgers}}
+			{{#if devoured}}
+			{{> burgers/burger-partial devoured=false}}
+			{{/if}}
+			{{/each}}
+		</div>
+		{{!-- the action is the URL where the data will be pushed
+		POST is the METHOD
+		--}}
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-border center-block">
+	
+	<div class="col-lg-offset-4 col-lg-5 col-md-offest-4 col-md-5 col-sm-offset-3 col-sm-4 col-xs-12 footer">
+	<div class="form-group">
+	<form action="/api/burgers" method="POST">
+	<input type="text" name="burger" class="form-control inline pull-left" id="burger-input"></input>
+	<button type="submit" class="btn btn-danger inline pull-left">ADD A BURGER</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	<p> <a href="/" class="reset-all">Reset All Burgers</a></p>
+</div>

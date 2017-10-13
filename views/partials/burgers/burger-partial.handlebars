@@ -1,0 +1,10 @@
+
+  {{burgers}}
+  	<div class="burger shadow">
+  	{{#if devoured}} #{{this.id}} {{/if}}
+  	{{this.burger_name}} 
+
+       	{{#if devoured}}<button class="btn btn-danger btn-sm pull-right change-eaten" data-id="{{id}}" data-eaten="{{devoured}}">
+		DEVOUR IT!{{else}} {{/if}}
+	</button>
+</div>

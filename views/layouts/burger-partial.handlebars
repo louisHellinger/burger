@@ -1,0 +1,17 @@
+{{!-- <li>
+  {{name}}
+  	
+  	   <p>id: {{this.id}}</p>
+       <p>Burger: {{this.burger_name}}</p>
+       	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{devoured}}">
+		{{#if sleep}}DEVOUR ME!{{else}}WAKE UP!{{/if}}
+	</button>
+ </li> --}}
+
+ <li>
+	{{name}}
+
+	<button class="change-eaten" data-id="{{id}}" data-eaten="{{id}}">
+		{{#if id}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
+	</button>
+</li>

@@ -1,0 +1,152 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body {
+	background-color:#daa507; 
+	/*background-image: url("/assets/img/burger.png");
+	background-size: 50% 50%;*/
+
+}
+
+.container-fluid {
+	padding:0px;
+}
+
+#left-panel .burger {
+	background-color:#44aa00;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 16px;
+	color:white;
+	text-transform: uppercase;
+
+	border-radius: 10px;
+	padding:10px 0px 10px 0px;
+	
+	border:1px solid black;
+	font-family: 'Lato', sans-serif;
+
+}
+
+#right-panel .burger {
+	background-color:#d40000;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 16px;
+	color:white;
+	text-transform: uppercase;
+
+	border-radius: 10px;
+	padding:10px 0px 10px 0px;
+	
+	border:1px solid black;
+
+	opacity: .6;
+	font-family: 'Lato', sans-serif;
+
+}
+
+#left-panel {
+	overflow: auto;
+	margin-right:10px;
+	text-align: center;	
+
+	/*border: 1px solid red;*/
+}
+
+#right-panel {
+	margin-left:10px;
+	overflow: auto;
+	text-align: center;
+
+	/*border: 1px solid red;*/
+	
+}
+
+#left-panel h2, #right-panel h2 {
+	font-size:2em;
+	font-family: 'Bungee Inline', cursive;
+	color:white;
+	text-shadow: 2px 2px #333;
+}
+
+
+div {
+	/*border: 1px solid red;*/
+}
+
+#container{
+	text-align:center;
+	overflow:auto;
+}
+
+.change-eaten {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	padding:6px;
+
+
+}
+.jumbotron {
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+	background-color: #A55400;
+	color:yellow;
+	font-family: 'Bungee Inline', cursive;
+	margin-bottom:20px;
+
+}
+
+.jumbotron h1 {
+	font-size:44px;
+}
+
+.jumbotron img {
+	height:150px;
+	display:inline-block;
+	margin-right:20px;
+
+}
+
+#header-container h3{
+	font-size: 30px;
+}
+
+.footer {
+	padding-top:30px;
+	padding-bottom:60px;
+	text-align: center;
+	
+}
+
+.top-border{
+	border-top: 1px dashed black;
+
+}
+
+.btn {
+	display:inline-block;
+	margin-left:15px;
+}
+
+#burger-input{
+	width:200px;
+	/*text-align: center;*/
+}
+
+.shadow {
+  -moz-box-shadow:    inset 1px 1px 1px 1px #333;
+  -webkit-box-shadow:  inset 1px 1px 1px 1px #333;
+  box-shadow:          inset 1px 1px 1px 1px #333;
+}
+
+.pull-right {
+	margin-right:10px;
+	margin-top:-5px;
+
+}
+
+
